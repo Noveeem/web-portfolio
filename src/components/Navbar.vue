@@ -9,7 +9,7 @@
         props: {
             btn: {
                 type: String,
-                default: "Message Me"
+                default: "Send me a message"
             }
         }
     }
@@ -21,8 +21,8 @@
             <div class="flex-1 border-none">
                 <img v-bind:src="brand" alt="">
             </div>
-            <div class="flex-none">
-                <ul class="menu menu-horizontal px-1">
+            <div class="flex-none sm:block">
+                <ul class="menu menu-horizontal px-1 sm:hidden">
                     <li class="font-extralight text-lg"><a href="" class="hover:bg-transparent hover:text-white">Home</a></li>
                     <li class="font-extralight text-lg"><a href="" class="hover:bg-transparent hover:text-white">Skills</a></li>
                     <li class="font-extralight text-lg"><a href="" class="hover:bg-transparent hover:text-white">Experiences</a></li>

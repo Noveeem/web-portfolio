@@ -21,7 +21,7 @@ AOS.init()
             },
             desc: {
                 type: String,
-                default: "I am an aspiring information technology professional. A problem solver and constantly seeking challenges that contribute to my career growth. Collaborative and keen on details."
+                default: "An aspiring information technology professional. A problem solver and constantly seeking challenges that contribute to my career growth. Collaborative and keen on details."
             },
             github: {
                 type: String,
@@ -32,10 +32,10 @@ AOS.init()
 </script>
 
 <template>
-        <section id="introduction" class="spacer container mx-auto">
-            <div class="grid grid-cols-2 grid-rows-1 gap-4">
+        <section id="introduction" class="spacer container mx-auto mb-4">
+            <div class="grid grid-cols-2 grid-rows-1 gap-4 sm:flex sm:flex-col">
                 <div class="text-left">
-                    <p class="font-sans font-light text-lg" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">Howdy!, My name is</p>
+                    <p class="font-sans font-light text-lg" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">Howdy! I am</p>
                     <h2 class="font-sans font-bold text-[3.45rem] text-white"  data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-sine">{{ name }}</h2>
                     <p class="font-sans font-light text-lg mb-2" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">{{  desc }}</p>
                     <div data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">
@@ -45,19 +45,19 @@ AOS.init()
                         </a>
                     </div>
                 </div>
-                <div class="flex justify-center items-center">
+                <div class="flex justify-center items-center sm:hidden md:hidden xsm:hidden">
                     <img v-bind:src="windowCode" class="h-72" alt="" data-aos="zoom-in" data-aos-duration="1200" data-aos-easing="ease-in-sine">
                 </div>
             </div>
         </section>
         
-        <section id="skills" class="spacer container mx-auto">
-            <h4 class="text-[1.75rem] mb-2" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+        <section id="skills" class="spacer container mx-auto sm:flex sm:flex-col mb-4">
+            <h4 class="text-[1.75rem] mb-4" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-sine">
                 <span></span>
                 Skills
             </h4>
-            <div class="flex justify-center items-center">
-                <div class="card card-compact bg-neutral w-96 shadow-md mx-2" data-aos="fade-up" data-aos-duration="1300" data-aos-easing="ease-in-sine">
+            <div class="flex justify-center items-center sm:flex-col">
+                <div class="card card-compact bg-neutral w-96 shadow-md mx-2 sm:mb-4" data-aos="fade-up" data-aos-duration="1300" data-aos-easing="ease-in-sine">
                     <div class="card-body">
                         <h4 class="font-sans font-medium text-md">Frontend</h4>
                         <div class="grid grid-cols-3 grid-rows-2 gap-4">
@@ -94,7 +94,7 @@ AOS.init()
                         </div>
                     </div>
                 </div>
-                <div class="card card-compact bg-neutral w-96 shadow-md mx-2" data-aos="fade-up" data-aos-duration="1100" data-aos-easing="ease-in-sine">
+                <div class="card card-compact bg-neutral w-96 shadow-md mx-2 sm:mb-4" data-aos="fade-up" data-aos-duration="1100" data-aos-easing="ease-in-sine">
                     <div class="card-body">
                         <h4 class="font-sans font-medium text-md">Backend</h4>
                         <div class="grid grid-cols-3 grid-rows-2 gap-4">
@@ -116,7 +116,7 @@ AOS.init()
                         </div>
                     </div>
                 </div>
-                <div class="card card-compact bg-neutral w-96 shadow-md mx-2" data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-sine">
+                <div class="card card-compact bg-neutral w-96 shadow-md mx-2 sm:mb-4" data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-sine">
                     <div class="card-body">
                         <h4 class="font-sans font-medium text-md">Database</h4>
                         <div class="grid grid-cols-3 grid-rows-2 gap-4">
@@ -166,7 +166,7 @@ AOS.init()
 }
 h4>span::before {
     content: '';
-    border: 1px solid red;
+    border: 1px solid rgb(20, 79, 240);
     left: 100%;
     margin: 0px 20px;
 }
